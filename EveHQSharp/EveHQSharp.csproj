@@ -59,7 +59,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Core\UserControls\DashboardUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Core\UserControls\ManageAPIKeysUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Core\UserControls\ManageCrestTokensUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Core\UserControls\SettingsUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -75,8 +87,17 @@
     <Compile Include="Core\UserControls\CoreTabUserControl.xaml.cs">
       <DependentUpon>CoreTabUserControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Core\UserControls\DashboardUserControl.xaml.cs">
+      <DependentUpon>DashboardUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Core\UserControls\ManageAPIKeysUserControl.xaml.cs">
       <DependentUpon>ManageAPIKeysUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\UserControls\ManageCrestTokensUserControl.xaml.cs">
+      <DependentUpon>ManageCrestTokensUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\UserControls\SettingsUserControl.xaml.cs">
+      <DependentUpon>SettingsUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Core\Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

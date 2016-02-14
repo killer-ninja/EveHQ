@@ -7,17 +7,17 @@
              mc:Ignorable="d" d:DesignWidth="932" d:DesignHeight="648.65">
     <Grid Background="#FF323232" Margin="2,0,0,0">
         <TabControl x:Name="tabControl">
-            <TabItem Header="Dashboard">
-                <Grid x:Name="dashboardGrid" Background="#FFE5E5E5"/>
+            <TabItem x:Name="dashboardTab" Header="Dashboard">
+                <Grid x:Name="dashboardGrid" Background="#FFE5E5E5" Initialized="dashboardGrid_Initialized"/>
             </TabItem>
             <TabItem x:Name="manageAPIKeysTab" Header="Manage API Keys" GotFocus="manageAPIKeysTab_GotFocus">
                 <Grid x:Name="manageAPIKeysGrid" Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="Manage Crest Tokens" IsEnabled="False">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem x:Name="manageCrestTokensTab" Header="Manage Crest Tokens" GotFocus="manageCrestTokensTab_GotFocus">
+                <Grid x:Name="manageCrestTokensGrid" Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="Settings" IsEnabled="False">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem x:Name="settingsTab" Header="Settings" GotFocus="settingsTab_GotFocus">
+                <Grid x:Name="settingsGrid" Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
     </Grid>

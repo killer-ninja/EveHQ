@@ -27,10 +27,33 @@ namespace EveHQSharp.Core.UserControls
 
         private void manageAPIKeysTab_GotFocus(object sender, RoutedEventArgs e)
         {
-            if (Core.Classes.DynamicLoadingControl.CoreTabUserControlLoaded == false)
+            if (Classes.DynamicLoadingControl.CoreTabUserControlLoaded == false)
             {
                 manageAPIKeysGrid.Children.Add(new ManageAPIKeysUserControl());
-                Core.Classes.DynamicLoadingControl.CoreTabUserControlLoaded = true;
+                Classes.DynamicLoadingControl.CoreTabUserControlLoaded = true;
+            }
+        }
+
+        private void dashboardGrid_Initialized(object sender, EventArgs e)
+        {
+            dashboardGrid.Children.Add(new DashboardUserControl());
+        }
+
+        private void manageCrestTokensTab_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (Classes.DynamicLoadingControl.manageCrestTokensTabUserControlLoaded == false)
+            {
+                manageCrestTokensGrid.Children.Add(new ManageCrestTokensUserControl());
+                Classes.DynamicLoadingControl.manageCrestTokensTabUserControlLoaded = true;
+            }
+        }
+
+        private void settingsTab_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (Classes.DynamicLoadingControl.settingsTabUserControlLoaded == false)
+            {
+                settingsGrid.Children.Add(new SettingsUserControl());
+                Classes.DynamicLoadingControl.settingsTabUserControlLoaded = true;
             }
         }
     }

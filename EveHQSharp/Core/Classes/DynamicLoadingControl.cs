@@ -9,5 +9,7 @@ namespace EveHQSharp.Core.Classes
     public static class DynamicLoadingControl
     {
         public static bool CoreTabUserControlLoaded = false;
+        public static bool manageCrestTokensTabUserControlLoaded = false;
+        public static bool settingsTabUserControlLoaded = false;
     }
 }
