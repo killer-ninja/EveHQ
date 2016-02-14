@@ -13,26 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EveHQSharp
+namespace EveHQSharp.Core.UserControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ManageAPIKeysUserControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ManageAPIKeysUserControl : UserControl
     {
-        public MainWindow()
+        public ManageAPIKeysUserControl()
         {
             InitializeComponent();
-        }
-
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            Environment.Exit(1);
-        }
-
-        private void coreGrid_Initialized(object sender, EventArgs e)
-        {
-            coreGrid.Children.Add(new Core.UserControls.CoreTabUserControl());
         }
     }
 }

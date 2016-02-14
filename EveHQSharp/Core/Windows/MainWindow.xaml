@@ -5,28 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EveHQSharp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" Closed="Window_Closed">
-    <TabControl x:Name="tabControl" Margin="0,-1,0,0" TabStripPlacement="Left">
-        <TabItem x:Name="coreTab" Header="Core" Margin="-2,0,1,0">
-            <Grid x:Name="coreGrid" Background="#FF001F72"/>
+        Title="MainWindow" Height="600" Width="800" Closed="Window_Closed" Background="#FF424242" BorderBrush="#FF424242" Foreground="#FF424242">
+    <TabControl x:Name="tabControl" Margin="0,0,0,0" TabStripPlacement="Left">
+        <TabItem x:Name="coreTab" Header="Core" Margin="-2,0,0,0" HorizontalAlignment="Left" Width="60" Height="50">
+            <Grid x:Name="coreGrid" Initialized="coreGrid_Initialized"/>
         </TabItem>
-        <TabItem Header="Fitting" Margin="-2,0,1,0">
-            <Grid x:Name="fittingGrid" Background="#FF720000"/>
+        <TabItem x:Name="fittingTab" Header="Fitting" Margin="-2,0,0,0" HorizontalAlignment="Left" Width="60" Height="50" IsEnabled="False">
+            <Grid x:Name="fittingGrid"/>
         </TabItem>
-        <TabItem Header="Pilots" Margin="-2,0,1,0">
-            <Grid Background="#FF800074"/>
+        <TabItem x:Name="pilotTab" Header="Pilots" Margin="-2,0,0,0" HorizontalAlignment="Left" Width="60" Height="50" IsEnabled="False">
+            <Grid x:Name="pilotGrid"/>
         </TabItem>
-        <TabItem Header="Market" Margin="-2,0,1,0">
-            <Grid Background="#FF86D300"/>
-        </TabItem>
-        <TabItem Header="Industry" Margin="-2,0,1,0">
-            <Grid Background="#FF006A52" Margin="0,0,0,-30"/>
-        </TabItem>
-        <TabItem Header="TabItem" Margin="-2,0,1,0">
-            <Grid Background="#FFE5E5E5"/>
-        </TabItem>
-        <TabItem Header="TabItem" Margin="-2,0,0,0">
-            <Grid Background="#FFE5E5E5"/>
+        <TabItem x:Name="industryTab" Header="Industry" Margin="-2,0,0,0" HorizontalAlignment="Left" Width="60" Height="50" IsEnabled="False">
+            <Grid x:Name="industryGrid"/>
         </TabItem>
     </TabControl>
 </Window>

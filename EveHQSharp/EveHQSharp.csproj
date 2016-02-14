@@ -55,6 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Core\UserControls\CoreTabUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Core\UserControls\ManageAPIKeysUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Core\Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,6 +70,13 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\Classes\DynamicLoadingControl.cs" />
+    <Compile Include="Core\UserControls\CoreTabUserControl.xaml.cs">
+      <DependentUpon>CoreTabUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\UserControls\ManageAPIKeysUserControl.xaml.cs">
+      <DependentUpon>ManageAPIKeysUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Core\Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -96,8 +111,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\Classes\" />
-    <Folder Include="Core\UserControls\" />
     <Folder Include="EveAPI\Classes\" />
     <Folder Include="EveAPI\UserControls\" />
     <Folder Include="EveAPI\Windows\" />
