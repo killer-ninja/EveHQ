@@ -35,6 +35,17 @@ namespace EveHQSharp
         private void Window_Closed(object sender, EventArgs e)
         {
             Environment.Exit(1);
-        }   
+        }
+
+        #region DynamicLoadingEvents
+        private void pilotTab_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (Core.Classes.DynamicLoadingControl.PilotManagerTabUserControlLoaded == false)
+            {
+                pilotGrid.Children.Add(new PilotManager.UserControls.PilotManagerTabUserControl());
+                Core.Classes.DynamicLoadingControl.PilotManagerTabUserControlLoaded = true;
+            }
+        }
+        #endregion
     }
 }

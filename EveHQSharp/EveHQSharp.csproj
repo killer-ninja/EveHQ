@@ -97,6 +97,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PilotManager\UserControls\PilotManagerTabUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EveAPI\UserControls\ManageAPIKeysUserControl.xaml.cs">
@@ -104,6 +108,9 @@
     </Compile>
     <Compile Include="EveAPI\UserControls\ManageCrestTokensUserControl.xaml.cs">
       <DependentUpon>ManageCrestTokensUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PilotManager\UserControls\PilotManagerTabUserControl.xaml.cs">
+      <DependentUpon>PilotManagerTabUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -138,7 +145,6 @@
     <Folder Include="Industry\Classes\" />
     <Folder Include="Industry\UserControls\" />
     <Folder Include="PilotManager\Classes\" />
-    <Folder Include="PilotManager\UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

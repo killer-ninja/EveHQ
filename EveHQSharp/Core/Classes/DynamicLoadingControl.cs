@@ -11,5 +11,6 @@ namespace EveHQSharp.Core.Classes
         public static bool CoreTabUserControlLoaded = false;
         public static bool manageCrestTokensTabUserControlLoaded = false;
         public static bool settingsTabUserControlLoaded = false;
+        public static bool PilotManagerTabUserControlLoaded = false;
     }
 }
