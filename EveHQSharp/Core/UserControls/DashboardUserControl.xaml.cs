@@ -20,9 +20,11 @@ namespace EveHQSharp.Core.UserControls
     /// </summary>
     public partial class DashboardUserControl : UserControl
     {
+        #region Initialization
         public DashboardUserControl()
         {
             InitializeComponent();
         }
+        #endregion
     }
 }

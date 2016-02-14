@@ -13,16 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EveHQSharp.Core.UserControls
+namespace EveHQSharp.EveAPI.UserControls
 {
     /// <summary>
     /// Interaction logic for ManageAPIKeysUserControl.xaml
     /// </summary>
     public partial class ManageAPIKeysUserControl : UserControl
     {
+        #region Initialization
         public ManageAPIKeysUserControl()
         {
             InitializeComponent();
         }
+        #endregion
     }
 }

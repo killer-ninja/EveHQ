@@ -20,19 +20,21 @@ namespace EveHQSharp
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Initialization
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            Environment.Exit(1);
         }
 
         private void coreGrid_Initialized(object sender, EventArgs e)
         {
             coreGrid.Children.Add(new Core.UserControls.CoreTabUserControl());
         }
+        #endregion
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
+        }   
     }
 }

@@ -20,9 +20,11 @@ namespace EveHQSharp.Core.UserControls
     /// </summary>
     public partial class SettingsUserControl : UserControl
     {
+        #region Initialization
         public SettingsUserControl()
         {
             InitializeComponent();
         }
+        #endregion
     }
 }

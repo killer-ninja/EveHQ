@@ -20,30 +20,33 @@ namespace EveHQSharp.Core.UserControls
     /// </summary>
     public partial class CoreTabUserControl : UserControl
     {
+        #region Initialization
         public CoreTabUserControl()
         {
             InitializeComponent();
-        }
-
-        private void manageAPIKeysTab_GotFocus(object sender, RoutedEventArgs e)
-        {
-            if (Classes.DynamicLoadingControl.CoreTabUserControlLoaded == false)
-            {
-                manageAPIKeysGrid.Children.Add(new ManageAPIKeysUserControl());
-                Classes.DynamicLoadingControl.CoreTabUserControlLoaded = true;
-            }
         }
 
         private void dashboardGrid_Initialized(object sender, EventArgs e)
         {
             dashboardGrid.Children.Add(new DashboardUserControl());
         }
+        #endregion
+
+        #region DynamicLoadingEvents
+        private void manageAPIKeysTab_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (Classes.DynamicLoadingControl.CoreTabUserControlLoaded == false)
+            {
+                manageAPIKeysGrid.Children.Add(new EveAPI.UserControls.ManageAPIKeysUserControl());
+                Classes.DynamicLoadingControl.CoreTabUserControlLoaded = true;
+            }
+        }
 
         private void manageCrestTokensTab_GotFocus(object sender, RoutedEventArgs e)
         {
             if (Classes.DynamicLoadingControl.manageCrestTokensTabUserControlLoaded == false)
             {
-                manageCrestTokensGrid.Children.Add(new ManageCrestTokensUserControl());
+                manageCrestTokensGrid.Children.Add(new EveAPI.UserControls.ManageCrestTokensUserControl());
                 Classes.DynamicLoadingControl.manageCrestTokensTabUserControlLoaded = true;
             }
         }
@@ -56,5 +59,6 @@ namespace EveHQSharp.Core.UserControls
                 Classes.DynamicLoadingControl.settingsTabUserControlLoaded = true;
             }
         }
+        #endregion
     }
 }

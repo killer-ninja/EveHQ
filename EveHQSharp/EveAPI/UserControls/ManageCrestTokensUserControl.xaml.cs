@@ -13,16 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EveHQSharp.Core.UserControls
+namespace EveHQSharp.EveAPI.UserControls
 {
     /// <summary>
     /// Interaction logic for ManageCrestTokensUserControl.xaml
     /// </summary>
     public partial class ManageCrestTokensUserControl : UserControl
     {
+        #region Initialization
         public ManageCrestTokensUserControl()
         {
             InitializeComponent();
         }
+        #endregion
     }
 }

@@ -63,14 +63,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Core\UserControls\ManageAPIKeysUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Core\UserControls\ManageCrestTokensUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Core\UserControls\SettingsUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,12 +82,6 @@
     <Compile Include="Core\UserControls\DashboardUserControl.xaml.cs">
       <DependentUpon>DashboardUserControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Core\UserControls\ManageAPIKeysUserControl.xaml.cs">
-      <DependentUpon>ManageAPIKeysUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Core\UserControls\ManageCrestTokensUserControl.xaml.cs">
-      <DependentUpon>ManageCrestTokensUserControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Core\UserControls\SettingsUserControl.xaml.cs">
       <DependentUpon>SettingsUserControl.xaml</DependentUpon>
     </Compile>
@@ -103,8 +89,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="EveAPI\UserControls\ManageAPIKeysUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EveAPI\UserControls\ManageCrestTokensUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EveAPI\UserControls\ManageAPIKeysUserControl.xaml.cs">
+      <DependentUpon>ManageAPIKeysUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EveAPI\UserControls\ManageCrestTokensUserControl.xaml.cs">
+      <DependentUpon>ManageCrestTokensUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -133,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EveAPI\Classes\" />
-    <Folder Include="EveAPI\UserControls\" />
     <Folder Include="EveAPI\Windows\" />
     <Folder Include="Fitting\Classes\" />
     <Folder Include="Fitting\UserControls\" />
