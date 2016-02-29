@@ -13,7 +13,7 @@
         <TabItem x:Name="fittingTab" Header="Fitting" Margin="-2,0,0,0" HorizontalAlignment="Left" Width="60" Height="50" IsEnabled="False">
             <Grid x:Name="fittingGrid"/>
         </TabItem>
-        <TabItem x:Name="pilotTab" Header="Pilots" Margin="-2,0,0,0" HorizontalAlignment="Left" Width="60" Height="50" GotFocus="pilotTab_GotFocus">
+        <TabItem x:Name="pilotTab" Header="Pilots" Margin="-2,0,0,0" HorizontalAlignment="Left" Width="60" Height="50" IsEnabled="False">
             <Grid x:Name="pilotGrid"/>
         </TabItem>
         <TabItem x:Name="industryTab" Header="Industry" Margin="-2,0,0,0" HorizontalAlignment="Left" Width="60" Height="50" IsEnabled="False">

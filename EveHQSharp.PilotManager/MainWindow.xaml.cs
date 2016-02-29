@@ -13,28 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EveHQSharp
+namespace EveHQSharp.PilotManager
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        #region Initialization
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void coreGrid_Initialized(object sender, EventArgs e)
-        {
-            coreGrid.Children.Add(new Core.UserControls.CoreTabUserControl());
-        }
-        #endregion
-
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            Environment.Exit(1);
         }
     }
 }

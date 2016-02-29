@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{656D7076-C0AD-4334-90DF-1034C824A9EC}</ProjectGuid>
+    <ProjectGuid>{201AA41D-B7D1-4FFA-91A7-1162C738AC59}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EveHQSharp</RootNamespace>
-    <AssemblyName>EveHQSharp</AssemblyName>
+    <RootNamespace>EveHQSharp.Fitting</RootNamespace>
+    <AssemblyName>EveHQSharp.Fitting</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,18 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Core\UserControls\CoreTabUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Core\UserControls\DashboardUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Core\UserControls\SettingsUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,36 +63,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Core\Classes\DynamicLoadingControl.cs" />
-    <Compile Include="Core\UserControls\CoreTabUserControl.xaml.cs">
-      <DependentUpon>CoreTabUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Core\UserControls\DashboardUserControl.xaml.cs">
-      <DependentUpon>DashboardUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Core\UserControls\SettingsUserControl.xaml.cs">
-      <DependentUpon>SettingsUserControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="EveAPI\UserControls\ManageAPIKeysUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="EveAPI\UserControls\ManageCrestTokensUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EveAPI\UserControls\ManageAPIKeysUserControl.xaml.cs">
-      <DependentUpon>ManageAPIKeysUserControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="EveAPI\UserControls\ManageCrestTokensUserControl.xaml.cs">
-      <DependentUpon>ManageCrestTokensUserControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -132,7 +96,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EveAPI\Classes\" />
+    <ProjectReference Include="..\EveHQSharp\EveHQSharp.csproj">
+      <Project>{656d7076-c0ad-4334-90df-1034c824a9ec}</Project>
+      <Name>EveHQSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
