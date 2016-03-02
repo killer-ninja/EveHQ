@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="EveHQSharp.Pilot.UserControls.PilotMain"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EveHQSharp.Pilot.UserControls"
+             mc:Ignorable="d" d:DesignWidth="932" d:DesignHeight="648.65">
+    <Grid Background="#FF323232">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="46,14,0,0" VerticalAlignment="Top" Width="248"/>
+        <Label x:Name="staticLabel1" Content="Pilot:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FFC3C3C3" BorderThickness="3" CornerRadius="10" Height="116" Margin="10,41,0,0" Width="297"/>
+        <Label x:Name="staticLabel2" Content="Pilot Information" Margin="107,41,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="99"/>
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FFC3C3C3" BorderThickness="3" CornerRadius="10" Height="26" Margin="10,41,0,0" Width="297"/>
+        <Label x:Name="staticLabel3" Content="Corp:" Margin="21,72,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="70"/>
+        <Label x:Name="staticLabel4" Content="Isk:" Margin="21,98,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="70"/>
+        <Label x:Name="staticLabel5" Content="SkillPoints:" Margin="21,124,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="70"/>
+        <Label x:Name="PilotCorplabel" Content="Pilot Corp" Margin="91,72,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="203"/>
+        <Label x:Name="PilotIsklabel" Content="Pilot isk" Margin="91,98,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="203"/>
+        <Label x:Name="PilotSPlabel" Content="Pilot SP" Margin="91,124,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="203"/>
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FFC3C3C3" BorderThickness="3" CornerRadius="10" Height="139" Margin="10,165,0,0" Width="297"/>
+        <Label x:Name="staticLabel6" Content="Skill Training Information" Margin="84,165,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="144"/>
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FFC3C3C3" BorderThickness="3" CornerRadius="10" Height="26" Margin="10,165,0,0" Width="297"/>
+        <Label x:Name="staticLabel7" Content="Currently Training:" Margin="21,196,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="115"/>
+        <Label x:Name="staticLabel8" Content="Queue End:" Margin="21,222,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="115"/>
+        <Label x:Name="staticLabel9" Content="Current SP Rate:" Margin="21,248,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="115"/>
+        <Label x:Name="staticLabel10" Content="Queue Avg SP Rate:" Margin="21,274,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="115"/>
+        <Label x:Name="currentlyTraininglabel" Content="Skill" Margin="136,196,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="158"/>
+        <Label x:Name="queueEndLabel" Content="Queue End" Margin="136,222,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="158"/>
+        <Label x:Name="currentSPRateLabel" Content="Current SP Rate" Margin="136,248,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="158"/>
+        <Label x:Name="queueAvgSPRateLabel" Content="Queue Avg SP Rate" Margin="136,274,0,0" VerticalAlignment="Top" Foreground="White" HorizontalAlignment="Left" Width="158"/>
+    </Grid>
+</UserControl>

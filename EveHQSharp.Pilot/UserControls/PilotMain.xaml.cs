@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EveHQSharp.PilotManager
+namespace EveHQSharp.Pilot.UserControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PilotMain.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PilotMain : UserControl
     {
-        public MainWindow()
+        public PilotMain()
         {
             InitializeComponent();
         }
