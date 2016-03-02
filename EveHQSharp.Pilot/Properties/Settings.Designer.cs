@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EveHQSharp.Fitting.Properties
+namespace EveHQSharp.Pilot.Properties
 {
     
     

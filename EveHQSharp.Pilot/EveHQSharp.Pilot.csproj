@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D84BF41D-D04D-46E2-88BE-378AE035BB1C}</ProjectGuid>
+    <ProjectGuid>{FF951642-A2CF-4DA2-B051-7F1B9BF77C99}</ProjectGuid>
     <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EveHQSharp.Industry</RootNamespace>
-    <AssemblyName>EveHQSharp.Industry</AssemblyName>
+    <RootNamespace>EveHQSharp.Pilot</RootNamespace>
+    <AssemblyName>EveHQSharp.Pilot</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -61,6 +61,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UserControls\PilotMain.xaml.cs">
+      <DependentUpon>PilotMain.xaml</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,8 +75,13 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="UserControls\PilotMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
     <Folder Include="Classes\" />
-    <Folder Include="UserControls\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EveHQSharp\EveHQSharp.csproj">

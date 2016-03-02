@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="EveHQSharp.Core.UserControls.CoreTabUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EveHQSharp.Core.UserControls"
+             mc:Ignorable="d" d:DesignWidth="932" d:DesignHeight="648.65">
+    <Grid Background="#FF323232" Margin="2,0,0,0">
+        <TabControl x:Name="tabControl">
+            <TabItem x:Name="dashboardTab" Header="Dashboard">
+                <Grid x:Name="dashboardGrid" Background="#FFE5E5E5" Initialized="dashboardGrid_Initialized"/>
+            </TabItem>
+            <TabItem x:Name="manageAPIKeysTab" Header="Manage API Keys" GotFocus="manageAPIKeysTab_GotFocus">
+                <Grid x:Name="manageAPIKeysGrid" Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="manageCrestTokensTab" Header="Manage Crest Tokens" GotFocus="manageCrestTokensTab_GotFocus">
+                <Grid x:Name="manageCrestTokensGrid" Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="settingsTab" Header="Settings" GotFocus="settingsTab_GotFocus">
+                <Grid x:Name="settingsGrid" Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>
