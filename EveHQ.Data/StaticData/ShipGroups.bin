@@ -159,6 +159,13 @@ Capital Ships\Titans\Gallente
 Capital Ships\Titans\Gallente\Erebus
 Capital Ships\Titans\Minmatar
 Capital Ships\Titans\Minmatar\Ragnarok
+Citadels
+Citadels\Faction Citadels
+Citadels\Faction Citadels\Upwell Palatine Keepstar
+Citadels\Standard Citadels
+Citadels\Standard Citadels\Astrahus
+Citadels\Standard Citadels\Fortizar
+Citadels\Standard Citadels\Keepstar
 Cruisers
 Cruisers\Advanced Cruisers
 Cruisers\Advanced Cruisers\Heavy Assault Cruisers
@@ -255,6 +262,21 @@ Cruisers\Standard Cruisers\Minmatar\Bellicose
 Cruisers\Standard Cruisers\Minmatar\Rupture
 Cruisers\Standard Cruisers\Minmatar\Scythe
 Cruisers\Standard Cruisers\Minmatar\Stabber
+Deployable Structures
+Deployable Structures\Cargo Containers
+Deployable Structures\Cargo Containers\Audit Log Containers
+Deployable Structures\Cargo Containers\Freight Containers
+Deployable Structures\Cargo Containers\Secure Containers
+Deployable Structures\Cargo Containers\Standard Containers
+Deployable Structures\Cargo Containers\Station Containers
+Deployable Structures\Encounter Surveillance Systems
+Deployable Structures\Mobile Cynosural Inhibitors
+Deployable Structures\Mobile Depots
+Deployable Structures\Mobile Micro Jump Units
+Deployable Structures\Mobile Scan Inhibitors
+Deployable Structures\Mobile Siphon Units
+Deployable Structures\Mobile Tractor Units
+Deployable Structures\Warp Disruption Fields 
 Destroyers
 Destroyers\Advanced Destroyers
 Destroyers\Advanced Destroyers\Command Destroyers
@@ -472,6 +494,14 @@ Shuttles\Gallente
 Shuttles\Gallente\Gallente Shuttle
 Shuttles\Minmatar
 Shuttles\Minmatar\Minmatar Shuttle
+Sovereignty Structures
+Sovereignty Structures\Infrastructure Hubs
+Sovereignty Structures\Infrastructure Upgrades
+Sovereignty Structures\Infrastructure Upgrades\Industrial Upgrades
+Sovereignty Structures\Infrastructure Upgrades\Military Upgrades
+Sovereignty Structures\Infrastructure Upgrades\Strategic Upgrades
+Sovereignty Structures\Sovereignty Blockade Units
+Sovereignty Structures\Territorial Claim Units
 Special Edition Ships
 Special Edition Ships\Special Edition Assault Frigates
 Special Edition Ships\Special Edition Assault Frigates\Cambion
@@ -526,3 +556,27 @@ Special Edition Ships\Special Edition Shuttles\Apotheosis
 Special Edition Ships\Special Edition Shuttles\Council Diplomatic Shuttle
 Special Edition Ships\Special Edition Shuttles\InterBus Shuttle
 Special Edition Ships\Special Edition Shuttles\Leopard
+Starbase Structures
+Starbase Structures\Assembly Arrays
+Starbase Structures\Compression Array
+Starbase Structures\Control Towers
+Starbase Structures\Corporate Hangar Array
+Starbase Structures\Cynosural Generator Array
+Starbase Structures\Cynosural System Jammer
+Starbase Structures\Jump Bridge 
+Starbase Structures\Laboratory
+Starbase Structures\Moon Harvesting Arrays
+Starbase Structures\Personal Hangar Arrays
+Starbase Structures\Reactors
+Starbase Structures\Reprocessing Arrays
+Starbase Structures\Shield Hardening Arrays
+Starbase Structures\Ship Maintenance Arrays
+Starbase Structures\Silos
+Starbase Structures\System Scanning Array
+Starbase Structures\Weapon Batteries
+Starbase Structures\Weapon Batteries\Electronic Warfare Batteries
+Starbase Structures\Weapon Batteries\Energy Neutralization Batteries
+Starbase Structures\Weapon Batteries\Hybrid Batteries
+Starbase Structures\Weapon Batteries\Laser Batteries
+Starbase Structures\Weapon Batteries\Missile Batteries
+Starbase Structures\Weapon Batteries\Projectile Batteries

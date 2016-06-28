@@ -574,5 +574,39 @@
 1125,Ship Modifications\Subsystems\Minmatar Subsystems\Minmatar Engineering Subsystems
 1133,Ship Modifications\Subsystems\Minmatar Subsystems\Minmatar Offensive Subsystems
 1137,Ship Modifications\Subsystems\Minmatar Subsystems\Minmatar Propulsion Subsystems
+0,Structure Equipment
+0,Structure Equipment\Electronic Warfare
+2211,Structure Equipment\Electronic Warfare\Electronic Counter Measures
+2212,Structure Equipment\Electronic Warfare\Remote Sensor Dampeners
+2213,Structure Equipment\Electronic Warfare\Stasis Webifiers
+2214,Structure Equipment\Electronic Warfare\Target Painters
+2215,Structure Equipment\Electronic Warfare\Tracking Disruptors
+2216,Structure Equipment\Electronic Warfare\Warp Scramblers
+0,Structure Equipment\Electronics and Sensor Upgrades
+2218,Structure Equipment\Electronics and Sensor Upgrades\CPU Upgrades
+2217,Structure Equipment\Electronics and Sensor Upgrades\Ship Tractor Beams
+2219,Structure Equipment\Electronics and Sensor Upgrades\Signal Amplifiers
+0,Structure Equipment\Engineering Equipment
+2224,Structure Equipment\Engineering Equipment\Capacitor Boosters
+2223,Structure Equipment\Engineering Equipment\Energy Neutralizers
+2221,Structure Equipment\Engineering Equipment\Point Defense Batteries
+2222,Structure Equipment\Engineering Equipment\Reactor Control Units
+2220,Structure Equipment\Engineering Equipment\Repulsor Fields
+2225,Structure Equipment\Fighter Upgrades
+0,Structure Equipment\Service Modules
+2232,Structure Equipment\Service Modules\Citadel Service Modules
+2233,Structure Equipment\Service Modules\Reprocessing Service Modules
+0,Structure Equipment\Structure Weapons
+2228,Structure Equipment\Structure Weapons\Doomsday Devices
+2229,Structure Equipment\Structure Weapons\Guided Bomb Launchers
+0,Structure Equipment\Structure Weapons\Missile Launchers
+2230,Structure Equipment\Structure Weapons\Missile Launchers\Structure Anticapital Launcher
+2231,Structure Equipment\Structure Weapons\Missile Launchers\Structure Antisubcapital Launcher
+0,Structure Equipment\Structure Weapons\Weapon Upgrades
+2234,Structure Equipment\Structure Weapons\Weapon Upgrades\Ballistic Control Systems
+2235,Structure Equipment\Structure Weapons\Weapon Upgrades\Missile Guidance Enhancers
+0,Structure Modifications
+2204,Structure Modifications\Reprocessing Rigs
+2205,Structure Modifications\Structure Combat Rigs
 0,Favourites
 0,Recently Used
