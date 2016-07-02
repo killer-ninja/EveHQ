@@ -343,6 +343,7 @@ Public Enum ModuleEnum
     GroupShieldTransporters = 41
     GroupSmartbombs = 72
     GroupStrategicCruisers = 963
+    GroupCitadel = 1657
 
     ' marketGroupIDs (see invMarketGroups)
     MarketgroupGasHarvesters = 1037
