@@ -3272,6 +3272,14 @@ Imports EveHQ.Common.Extensions
             End If
         Next
         ' Apply ship group and type restrictions
+        If BaseShip.DatabaseGroup = ModuleEnum.GroupCitadel Then
+            If shipMod.Attributes.ContainsKey(AttributeEnum.ModuleCanFitShipGroup1) = False Then
+                If search = False Then
+                    MessageBox.Show("You cannot fit a " & shipMod.Name & " to your " & ShipName & " ('" & FittingName & "').", "Type Restriction", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+                Return False
+            End If
+        End If
         If shipGroups.Count > 0 Then
             If shipGroups.Contains(BaseShip.DatabaseGroup) = False Then
                 If shipTypes.Contains(BaseShip.ID) = False Then

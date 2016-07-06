@@ -2221,6 +2221,10 @@ Imports System.Runtime.Serialization
         Attributes.Add(10083, 0)
         ' Add unused attribute for calibration used
         Attributes.Add(1152, 0)
+        If DatabaseCategory = 65 Then
+            Attributes.Add(15, 0)
+            Attributes.Add(49, 0)
+        End If
         ' Check for slot attributes (missing for T3)
         If Attributes.ContainsKey(12) = False Then
             Attributes.Add(12, 0)
